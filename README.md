@@ -116,7 +116,3 @@ As capas incluídas em `static/images/books/` foram localizadas em fontes editor
 python -m unittest discover -s tests -v
 python -m compileall -q .
 ```
-
-## Segurança e repositório
-
-O `.gitignore` exclui `.env`, chaves geradas, bancos locais, caches e ambientes virtuais. Antes de subir seu repositório, confira `git status` e garanta que não incluiu credenciais, dumps SQL de produção, CPF/endereço/telefone reais ou logs. Não reutilize credenciais de teste em produção. O aplicativo protege rotas e não renderiza CPF completo em páginas públicas; dados de checkout necessários ao atendimento ficam no banco, então limite acesso, habilite backup criptografado e defina retenção/descarte conforme sua política.
